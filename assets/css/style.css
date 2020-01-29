@@ -11,6 +11,11 @@ nav {
   justify-content: space-between;
   background-color: rgba(38,40,42, .7);
   color: #1D428A;;
+  
+}
+
+#logo {
+  margin-left: 15px;
 }
 
 ul {
@@ -24,6 +29,7 @@ ul a {
   text-decoration: none;
   font-size: 20px;
   color: #26282A;
+  margin-right: 15px;
 }
 
 ul a:hover {
