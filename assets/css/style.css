@@ -163,10 +163,12 @@ ul a:hover {
 .card-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5px;
   width: 80%;
   margin: 0 auto;
   align-items: center;
 }
+
 
 #contact {
   height: 200px;
@@ -212,7 +214,7 @@ ul a:hover {
 
 
   #contact {
-    /* margin-top: 1240px; */
+    margin-top: 1240px;
     
   }
 
