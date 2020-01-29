@@ -1,6 +1,16 @@
+body,
+html {
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
 nav {
   display: flex;
   justify-content: space-between;
+  background-color: rgba(38,40,42, .7);
+  color: #1D428A;;
 }
 
 ul {
@@ -13,4 +23,199 @@ ul a {
   margin: 5px;
   text-decoration: none;
   font-size: 20px;
+  color: #26282A;
 }
+
+ul a:hover {
+  margin: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #041E42;
+}
+
+.hero {
+  /* Sizing */
+  
+  height: 90vh;
+  
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Text styles */
+  text-align: center;
+
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/threeSitting.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.hero h2 {
+  /* Text styles */
+  font-size: 3em;
+  color: #FDB927;;
+  
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.hero .btn {
+  /* Positioning and sizing */
+  display: block;
+  width: 200px;
+  
+  /* Padding and margins */
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* Text styles */
+  color: black; /* CHANGE THIS LINE */
+  text-decoration: none;
+  font-size: 1.5em;
+  
+  /* Border styles */
+  border: 3px solid #FDB927;; /* CHANGE THIS LINE */
+  border-radius: 20px;
+
+  background-color: #FDB927;;
+}
+
+#about-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.about p{
+  margin-right: 15px;
+}
+
+.tagLines {
+  display: flex;
+  /* height: 300px; */
+ 
+  margin: 0 auto;
+  background-color: #fafafa;
+}
+
+.tagContainer {
+  padding: 100px;
+}
+
+.tag {
+  margin-right: 15px;
+}
+/* .tagLines .tag{
+  margin-right: 15px;
+} */
+
+.margin-top {
+  margin-top: 60px;
+}
+
+.tagLines-title {
+  text-transform: uppercase;
+}
+
+#testimonies {
+  background-color: #212121;
+  color: white;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.testimonies-quote {
+  display: inline-block;
+  font-size: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#services {
+  height: 300px;
+  /* background-color: #fafafa; */
+  margin-top: -10px;
+}
+
+#services-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#contact {
+  height: 200px;
+  margin-top: 300px;
+  background-color: #fafafa;
+  /* padding: 25px; */
+}
+
+#contact-title {
+  text-align: center;
+  text-transform: uppercase;
+  /* margin-bottom: 100px; */
+}
+
+.contact {
+  justify-content: space-around;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 576px) { 
+  .about {
+    display: grid;
+  }
+
+  .tagLines {
+    display: grid;
+  }
+
+  #testimonies {
+    height: 500px;
+    
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    
+  }
+
+
+  #contact {
+    /* margin-top: 1240px; */
+    
+  }
+
+  
+
+ }
