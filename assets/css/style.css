@@ -37,6 +37,7 @@ ul a:hover {
   text-decoration: none;
   font-size: 20px;
   color: #041E42;
+  margin-right: 15px;
 }
 
 .hero {
@@ -196,6 +197,25 @@ ul a:hover {
 /* MEDIA QUERIES */
 
 @media (max-width: 576px) { 
+
+
+
+
+  ul {
+    display: none;
+  }
+
+  .hero h2 {
+    /* Text styles */
+    font-size: 1.5em;
+    color: #FDB927;;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+
   .about {
     display: grid;
   }
