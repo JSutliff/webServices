@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- HAMBURGER ICON -->
     <nav class="navbar">
       <span class="open-slide">
         <a href="#" onclick="openSlideMenu()">
@@ -22,6 +23,7 @@
 
       <h2 id="logo">GSWS</h2>
 
+      <!-- NAV -->
       <ul class="navbar-nav">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -32,6 +34,7 @@
       </ul>
     </nav>
 
+    <!-- SLIDE MENU -->
     <div id="side-menu" class="side-nav">
       <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
       <a href="#hero">Home</a>
@@ -42,6 +45,7 @@
       <a href="#contact">Contact</a>
     </div>
 
+    <!-- HERO -->
     <section class="hero" id="hero">
       <div class="hero-inner">
         <h2 id="hero-text">
@@ -52,6 +56,7 @@
     </section>
 
     <main>
+      <!-- ABOUT -->
       <section id="about">
         <div id="about-title">
           <h2>About Us</h2>
@@ -74,6 +79,7 @@
         </div>
       </section>
 
+      <!-- TAGLINES -->
       <div class="tagLines tagContainer margin-top">
         <div id="tag-1" class="tag">
           <h3 class="tagLines-title">Data Driven</h3>
@@ -101,6 +107,7 @@
         </div>
       </div>
 
+      <!-- TESTIMONIES -->
       <section id="testimonies">
         <div class="testimonies-quote">
           <p>
@@ -112,6 +119,7 @@
         </div>
       </section>
 
+      <!-- SERVICES -->
       <section id="services">
         <div id="services-title">
           <h2>Services</h2>
@@ -174,9 +182,11 @@
         </div>
       </section>
 
+      <!-- PORTFOLIO -->
       <div id="portfolio">
         <h2 id="portfolio-title">Our Work</h2>
         <div id="portfolio-container">
+          <!-- CANAL 50 CARD -->
           <div class="card portfolio-card">
             <img
               src="../public/assets/images/canal50.png"
@@ -200,6 +210,7 @@
             </div>
           </div>
 
+          <!-- AMBLESIDE CARD -->
           <div class="card portfolio-card">
             <img
               src="../public/assets/images/ambleSide.png"
@@ -223,6 +234,7 @@
             </div>
           </div>
 
+          <!-- CREATIVE VISIONS CARD -->
           <div class="card portfolio-card">
             <img
               src="../public/assets/images/creativeVisions.png"
@@ -245,11 +257,14 @@
               >
             </div>
           </div>
+
+          <!-- END CARD CONTAINER -->
         </div>
       </div>
 
+      <!-- CONTACT FORM -->
       <div id="contact">
-        <form action="/contact" id="contactForm">
+        <form action="/contact" id="contactForm" method="POST">
           <h2>Contact Us</h2>
           <input type="text" placeholder="Name" name="userName" />
           <input type="text" placeholder="Email" name="userEmail" />
@@ -261,28 +276,14 @@
             placeholder="Message"
             spellcheck="true"
           ></textarea>
-          <button
-            type="submit"
-            id="contactBtn"
-            class="btn"
-            onclick="openModal()"
-          >
+          <button type="submit" id="contactBtn" class="btn">
             Contact Us
           </button>
         </form>
       </div>
     </main>
 
-    <script>
-      function openSlideMenu() {
-        document.getElementById("side-menu").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-      }
-
-      function closeSlideMenu() {
-        document.getElementById("side-menu").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-      }
-    </script>
+    <script src="./assets/js/slideMenu.js"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
