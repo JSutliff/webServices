@@ -38,7 +38,7 @@
 
   <!-- SLIDE MENU -->
   <div id="side-menu" class="side-nav">
-    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <p class="btn-close" onclick="closeSlideMenu()">&times;</p>
     <a href="#hero">Home</a>
     <a href="#about">About</a>
     <a href="#services">Services</a>
@@ -248,7 +248,18 @@
     </div>
   </main>
 
-  <script src="./assets/js/slideMenu.js"></script>
+  <!-- <script src="./assets/js/slideMenu.js"></script> -->
+  <script>
+    function openSlideMenu() {
+      document.getElementById("side-menu").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeSlideMenu() {
+      document.getElementById("side-menu").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
   <script src="./assets/js/index.js"></script>
 </body>
 

@@ -73,6 +73,10 @@ body {
   margin-left: 50px;
 }
 
+.btn-close {
+  color: goldenrod;
+}
+
 .hero {
   /* Sizing */
 
