@@ -1,98 +1,135 @@
-body,
-html {
-  height: 100%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.6;
+body {
+  font-family: "Arial", Serif;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
 }
 
-
-nav {
+.navbar {
+  background-color: rgba(38, 40, 42, 0.7);
+  overflow: hidden;
+  height: 63px;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(38,40,42, .7);
-  color: #1D428A;;
-  
 }
 
 #logo {
   margin-left: 15px;
+  color: #1d428a;
 }
 
-ul {
-  display: flex;
+.navbar a {
+  /* float: left; */
+  display: block;
+  color: #26282a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar ul {
+  margin: 8px 0 0 0;
   list-style: none;
-  align-items: center;
+  display: flex;
 }
 
-ul a {
-  margin: 5px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #26282A;
-  margin-right: 15px;
+.navbar a:hover {
+  background-color: #ddd;
+  color: #1d428a;
 }
 
-ul a:hover {
-  margin: 5px;
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.side-nav a {
+  padding: 10px 10px 10px 30px;
   text-decoration: none;
-  font-size: 20px;
-  color: #041E42;
-  margin-right: 15px;
+  font-size: 22px;
+  color: goldenrod;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: #fff;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 .hero {
   /* Sizing */
-  
+
   height: 90vh;
-  
+
   /* Flexbox stuff */
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   /* Text styles */
   text-align: center;
 
   /* Background styles */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/threeSitting.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/threeSitting.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
-
 
 .hero h2 {
   /* Text styles */
   font-size: 3em;
-  color: #FDB927;;
-  
+  color: #fdb927;
+
   /* Margins */
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 2.8em;
 }
 
 .hero .btn {
   /* Positioning and sizing */
   display: block;
   width: 200px;
-  
+
   /* Padding and margins */
   padding: 1em;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  
+
   /* Text styles */
   color: black; /* CHANGE THIS LINE */
   text-decoration: none;
   font-size: 1.5em;
-  
+
   /* Border styles */
-  border: 3px solid #FDB927;; /* CHANGE THIS LINE */
+  border: 3px solid #fdb927; /* CHANGE THIS LINE */
   border-radius: 20px;
 
-  background-color: #FDB927;;
+  background-color: #fdb927;
+}
+
+.btn:hover {
+  opacity: 0.7;
 }
 
 #about-title {
@@ -107,14 +144,14 @@ ul a:hover {
   font-size: 18px;
 }
 
-.about p{
+.about p {
   margin-right: 15px;
 }
 
 .tagLines {
   display: flex;
   /* height: 300px; */
- 
+
   margin: 0 auto;
   background-color: #fafafa;
 }
@@ -146,7 +183,6 @@ ul a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .testimonies-quote {
@@ -176,45 +212,119 @@ ul a:hover {
   align-items: center;
 }
 
-
-#contact {
-  height: 200px;
+#portfolio {
   margin-top: 300px;
-  background-color: #fafafa;
-  /* padding: 25px; */
-}
-
-#contact-title {
+  background-color: white;
   text-align: center;
-  text-transform: uppercase;
-  /* margin-bottom: 100px; */
+  height: 670px;
+  padding: 20px;
 }
 
-.contact {
+#portfolio-container {
+  display: flex;
   justify-content: space-around;
 }
 
-/* MEDIA QUERIES */
+#portfolio-title {
+  margin-bottom: 100px;
+}
 
-@media (max-width: 600px) { 
+.portfolio-card {
+  width: 18rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 400px;
+}
 
+.portfolio-card-title {
+  font-size: 18px;
+}
 
+.portfolio-card-text {
+  margin-left: 10px;
+}
 
+.portfolio-card-button {
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: goldenrod;
+  text-decoration: none;
+  color: black;
+}
 
-  ul {
+#contact {
+  margin-top: 100px;
+  background-color: #f4f4f4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  border: 0;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form textarea {
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  border-style: inset;
+  border-width: 2px;
+  font-family: "Arial", Serif;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+form button {
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: goldenrod;
+  border: 0;
+}
+
+form button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 568px) {
+  .navbar ul {
     display: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  .hero {
+    width: 100%;
   }
 
   .hero h2 {
     /* Text styles */
     font-size: 1.5em;
-    color: #FDB927;;
-    
+    color: #fdb927;
+
     /* Margins */
     margin-top: 0;
     margin-bottom: 0.5em;
   }
-
 
   .about {
     display: grid;
@@ -226,7 +336,19 @@ ul a:hover {
 
   #testimonies {
     height: 500px;
-    
+  }
+
+  #portfolio {
+    margin-top: 800px;
+    height: 1600px;
+  }
+
+  #portfolio-container {
+    flex-direction: column;
+  }
+
+  .portfolio-card {
+    margin-bottom: 100px;
   }
 
   .card-container {
@@ -235,15 +357,15 @@ ul a:hover {
     width: 80%;
     margin: 0 auto;
     align-items: center;
-    
   }
-
 
   #contact {
-    margin-top: 1240px;
-    
+    margin-top: 100px;
   }
+}
 
-  
-
- }
+@media (min-width: 568px) {
+  .open-slide {
+    display: none;
+  }
+}
