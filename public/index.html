@@ -1,266 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GSWS</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>GSWS</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Golden State Web Services",
+        "image": "",
+        "@id": "",
+        "url": "http://www.goldenstatewebservices.com",
+        "telephone": "5306382535",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "",
+          "addressLocality": "Redding",
+          "addressRegion": "CA",
+          "postalCode": "96001",
+          "addressCountry": "US"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:00",
+          "closes": "17:00"
+        }
+      }
+    </script>
+  </head>
 
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+  <body>
+    <!-- HAMBURGER ICON -->
+    <nav class="navbar">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="black" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="black" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="black" stroke-width="5" />
+          </svg>
+        </a>
+      </span>
 
-<body>
-  <!-- HAMBURGER ICON -->
-  <nav class="navbar">
-    <span class="open-slide">
-      <a href="#" onclick="openSlideMenu()">
-        <svg width="30" height="30">
-          <path d="M0,5 30,5" stroke="black" stroke-width="5" />
-          <path d="M0,14 30,14" stroke="black" stroke-width="5" />
-          <path d="M0,23 30,23" stroke="black" stroke-width="5" />
-        </svg>
-      </a>
-    </span>
+      <h2 id="logo">GSWS</h2>
 
-    <h2 id="logo">GSWS</h2>
+      <!-- NAV -->
+      <ul class="navbar-nav">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-    <!-- NAV -->
-    <ul class="navbar-nav">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- SLIDE MENU -->
-  <div id="side-menu" class="side-nav">
-    <p class="btn-close" onclick="closeSlideMenu()">&times;</p>
-    <a href="#hero">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#">Blog</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-inner">
-      <h2 id="hero-text">
-        We create effective websites that are focused on results
-      </h2>
-      <a href="#contact" class="btn">Get a quote</a>
+    <!-- SLIDE MENU -->
+    <div id="side-menu" class="side-nav">
+      <p class="btn-close" onclick="closeSlideMenu()">&times;</p>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#">Blog</a>
+      <a href="#contact">Contact</a>
     </div>
-  </section>
 
-  <main>
-    <!-- ABOUT -->
-    <section id="about">
-      <div id="about-title">
-        <h2>About Us</h2>
-      </div>
-      <div class="about">
-        <p>
-          At Golden State Web Services we pride ourselves on crafting custom
-          technical solutions for the unique needs of each client. We are
-          focused on results and driven by data. We have experience in digital
-          marketing, search engine optimization, social media management, web
-          design/development and hosting.
-        </p>
-        <p>
-          Being a small company enables us to provide personal attention to
-          each of our customers. We use a client questionaire to effectively
-          learn the needs of each project before designing a solution. This
-          allows us to provide optimized developement that produces consistent
-          results. Contact us today for a free quote.
-        </p>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <h2 id="hero-text">
+          We create effective websites that are focused on results
+        </h2>
+        <a href="#contact" class="btn">Get a quote</a>
       </div>
     </section>
 
-    <!-- TAGLINES -->
-    <div class="tagLines tagContainer margin-top">
-      <div id="tag-1" class="tag">
-        <h3 class="tagLines-title">Data Driven</h3>
-        <p>
-          We use analytics tools to understand your users and and best
-          evaluate the performance of your website, digital marketing, content
-          and more.
-        </p>
-      </div>
+    <main>
+      <!-- ABOUT -->
+      <section id="about">
+        <div id="about-title">
+          <h2>About Us</h2>
+        </div>
+        <div class="about">
+          <p>
+            At Golden State Web Services we pride ourselves on crafting custom
+            technical solutions for the unique needs of each client. We are
+            focused on results and driven by data. We have experience in digital
+            marketing, search engine optimization, social media management, web
+            design/development and hosting.
+          </p>
+          <p>
+            Being a small company enables us to provide personal attention to
+            each of our customers. We use a client questionaire to effectively
+            learn the needs of each project before designing a solution. This
+            allows us to provide optimized developement that produces consistent
+            results. Contact us today for a free quote.
+          </p>
+        </div>
+      </section>
 
-      <div id="tag-2" class="tag">
-        <h3 class="tagLines-title">Design Focused</h3>
-        <p>
-          We apply proven design principles to achieve visually appealing
-          products that produce results.
-        </p>
-      </div>
-
-      <div id="tag-3" class="tag">
-        <h3 class="tagLines-title">Detail Oriented</h3>
-        <p>
-          With an acute attention to detail our team is able to provide unique
-          insights that may otherwise be overlooked.
-        </p>
-      </div>
-    </div>
-
-    <!-- TESTIMONIES -->
-    <section id="testimonies">
-      <div class="testimonies-quote">
-        <p>
-          "The team at Golden State Web Services helped to bring my business
-          into the modern age by providing web development, digital marketing
-          and hosting services. I would recomend them to anyone looking to
-          create a strong presence on the web" - Mark Wieland
-        </p>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services">
-      <div id="services-title">
-        <h2>Services</h2>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <h3 class="card-title">Web Design/Development</h3>
-          <p class="card-description">
-            First impressions of a business are often made online. We design
-            and develop visually appealing websites and applications that
-            produce results.
+      <!-- TAGLINES -->
+      <div class="tagLines tagContainer margin-top">
+        <div id="tag-1" class="tag">
+          <h3 class="tagLines-title">Data Driven</h3>
+          <p>
+            We use analytics tools to understand your users and and best
+            evaluate the performance of your website, digital marketing, content
+            and more.
           </p>
         </div>
 
-        <div class="card">
-          <h3 class="card-title">Search Engine Optimization</h3>
-          <p class="card-description">
-            By optimizing your site to rank in the top results of search
-            engines such as Google and Bing we are able to help customers find
-            your business instead of the competition.
+        <div id="tag-2" class="tag">
+          <h3 class="tagLines-title">Design Focused</h3>
+          <p>
+            We apply proven design principles to achieve visually appealing
+            products that produce results.
           </p>
         </div>
 
-        <div class="card">
-          <h3 class="card-title">Digital Marketing</h3>
-          <p class="card-description">
-            Having a strong presence on the web is important for any modern
-            business. We manage effective ad campaigns on platforms such as
-            Google, Facebook, Instagram and others.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3 class="card-title">Social Media Management</h3>
-          <p class="card-description">
-            Customer engagement through social media is more valuable now than
-            ever. We can help create and maintain your brand image through
-            managing postings on social media platforms such as Instagram and
-            Facebook.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3 class="card-title">Content Creation</h3>
-          <p class="card-description">
-            Having quality content helps create a strong presence on the web.
-            Our team is able to craft blogs and articles for just about any
-            industry or market targeting the customers you want.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3 class="card-title">Web Hosting</h3>
-          <p class="card-description">
-            In order to provide efficient support to our customers we host all
-            of the websites we build on our servers. This allows us to keep
-            development costs down while providing unrivaled customer support.
+        <div id="tag-3" class="tag">
+          <h3 class="tagLines-title">Detail Oriented</h3>
+          <p>
+            With an acute attention to detail our team is able to provide unique
+            insights that may otherwise be overlooked.
           </p>
         </div>
       </div>
-    </section>
 
-    <!-- PORTFOLIO -->
-    <div id="portfolio">
-      <h2 id="portfolio-title">Our Work</h2>
-      <div id="portfolio-container">
-        <!-- CANAL 50 CARD -->
-        <div class="card portfolio-card">
-          <img src="./assets/images/canal50.png" alt="" class="portfolio-card-img" width="286" height="180" />
-          <div class="portfolio-card-body">
-            <h5 class="portfolio-card-title">Canal 50 Phoenix</h5>
-            <p class="portfolio-card-text">
-              A landing page for a TV channel that is designed to inform and
-              aquire new viewers.
+      <!-- TESTIMONIES -->
+      <section id="testimonies">
+        <div class="testimonies-quote">
+          <p>
+            "The team at Golden State Web Services helped to bring my business
+            into the modern age by providing web development, digital marketing
+            and hosting services. I would recomend them to anyone looking to
+            create a strong presence on the web" - Mark Wieland
+          </p>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services">
+        <div id="services-title">
+          <h2>Services</h2>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <h3 class="card-title">Web Design/Development</h3>
+            <p class="card-description">
+              First impressions of a business are often made online. We design
+              and develop visually appealing websites and applications that
+              produce results.
             </p>
-            <a href="http://www.canal50phoenix.com/" target="blank" class="portfolio-card-button btn">Check It Out</a>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Search Engine Optimization</h3>
+            <p class="card-description">
+              By optimizing your site to rank in the top results of search
+              engines such as Google and Bing we are able to help customers find
+              your business instead of the competition.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Digital Marketing</h3>
+            <p class="card-description">
+              Having a strong presence on the web is important for any modern
+              business. We manage effective ad campaigns on platforms such as
+              Google, Facebook, Instagram and others.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Social Media Management</h3>
+            <p class="card-description">
+              Customer engagement through social media is more valuable now than
+              ever. We can help create and maintain your brand image through
+              managing postings on social media platforms such as Instagram and
+              Facebook.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Content Creation</h3>
+            <p class="card-description">
+              Having quality content helps create a strong presence on the web.
+              Our team is able to craft blogs and articles for just about any
+              industry or market targeting the customers you want.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Web Hosting</h3>
+            <p class="card-description">
+              In order to provide efficient support to our customers we host all
+              of the websites we build on our servers. This allows us to keep
+              development costs down while providing unrivaled customer support.
+            </p>
           </div>
         </div>
+      </section>
 
-        <!-- AMBLESIDE CARD -->
-        <div class="card portfolio-card">
-          <img src="./assets/images/ambleSide.png" alt="" class="portfolio-card-img" width="286" height="180" />
-          <div class="portfolio-card-body">
-            <h5 class="portfolio-card-title">Ambleside Dr.</h5>
-            <p class="portfolio-card-text">
-              A single property website designed to sell a home. Lists
-              features of the home as well as local school ratings.
-            </p>
-            <a href="https://jsutliff.github.io/single-property/" target="blank" class="portfolio-card-button btn">Check
-              It Out</a>
+      <!-- PORTFOLIO -->
+      <div id="portfolio">
+        <h2 id="portfolio-title">Our Work</h2>
+        <div id="portfolio-container">
+          <!-- CANAL 50 CARD -->
+          <div class="card portfolio-card">
+            <img
+              src="./assets/images/canal50.png"
+              alt=""
+              class="portfolio-card-img"
+              width="286"
+              height="180"
+            />
+            <div class="portfolio-card-body">
+              <h5 class="portfolio-card-title">Canal 50 Phoenix</h5>
+              <p class="portfolio-card-text">
+                A landing page for a TV channel that is designed to inform and
+                aquire new viewers.
+              </p>
+              <a
+                href="http://www.canal50phoenix.com/"
+                target="blank"
+                class="portfolio-card-button btn"
+                >Check It Out</a
+              >
+            </div>
           </div>
-        </div>
 
-        <!-- CREATIVE VISIONS CARD -->
-        <div class="card portfolio-card">
-          <img src="./assets/images/creativeVisions.png" alt="" class="portfolio-card-img" width="286" height="180" />
-          <div class="portfolio-card-body">
-            <h5 class="portfolio-card-title">Creative Visions</h5>
-            <p class="portfolio-card-text">
-              A small business landing page designed to generate sales and
-              reach potential clients.
-            </p>
-            <a href="https://jsutliff.github.io/creative-visions/" target="blank"
-              class="portfolio-card-button btn">Check It Out</a>
+          <!-- AMBLESIDE CARD -->
+          <div class="card portfolio-card">
+            <img
+              src="./assets/images/ambleSide.png"
+              alt=""
+              class="portfolio-card-img"
+              width="286"
+              height="180"
+            />
+            <div class="portfolio-card-body">
+              <h5 class="portfolio-card-title">Ambleside Dr.</h5>
+              <p class="portfolio-card-text">
+                A single property website designed to sell a home. Lists
+                features of the home as well as local school ratings.
+              </p>
+              <a
+                href="https://jsutliff.github.io/single-property/"
+                target="blank"
+                class="portfolio-card-button btn"
+                >Check It Out</a
+              >
+            </div>
           </div>
-        </div>
 
-        <!-- END CARD CONTAINER -->
+          <!-- CREATIVE VISIONS CARD -->
+          <div class="card portfolio-card">
+            <img
+              src="./assets/images/creativeVisions.png"
+              alt=""
+              class="portfolio-card-img"
+              width="286"
+              height="180"
+            />
+            <div class="portfolio-card-body">
+              <h5 class="portfolio-card-title">Creative Visions</h5>
+              <p class="portfolio-card-text">
+                A small business landing page designed to generate sales and
+                reach potential clients.
+              </p>
+              <a
+                href="https://jsutliff.github.io/creative-visions/"
+                target="blank"
+                class="portfolio-card-button btn"
+                >Check It Out</a
+              >
+            </div>
+          </div>
+
+          <!-- END CARD CONTAINER -->
+        </div>
       </div>
-    </div>
 
-    <!-- CONTACT FORM -->
-    <div id="contact">
-      <form action="/contact" id="contactForm" method="POST">
-        <h2>Contact Us</h2>
-        <input type="text" placeholder="Name" name="userName" />
-        <input type="text" placeholder="Email" name="userEmail" />
-        <textarea name="userEmailMessage" id="userEmailMessage" cols="30" rows="10" placeholder="Message"
-          spellcheck="true"></textarea>
-        <button type="submit" id="contactBtn" class="btn">
-          Contact Us
-        </button>
-      </form>
-    </div>
-  </main>
+      <!-- CONTACT FORM -->
+      <div id="contact">
+        <form action="/contact" id="contactForm" method="POST">
+          <h2>Contact Us</h2>
+          <input type="text" placeholder="Name" name="userName" />
+          <input type="text" placeholder="Email" name="userEmail" />
+          <textarea
+            name="userEmailMessage"
+            id="userEmailMessage"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            spellcheck="true"
+          ></textarea>
+          <button type="submit" id="contactBtn" class="btn">
+            Contact Us
+          </button>
+        </form>
+      </div>
+    </main>
 
-  <!-- <script src="./assets/js/slideMenu.js"></script> -->
-  <script>
-    function openSlideMenu() {
-      document.getElementById("side-menu").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-    }
+    <footer>
+      <p id="copywrite">
+        Copyright&copy; Golden State Web Services 2020. All Rights Reserved.
+      </p>
+    </footer>
 
-    function closeSlideMenu() {
-      document.getElementById("side-menu").style.width = "0";
-      document.getElementById("main").style.marginLeft = "0";
-    }
-  </script>
-  <script src="./assets/js/index.js"></script>
-</body>
+    <!-- <script src="./assets/js/slideMenu.js"></script> -->
+    <script>
+      function openSlideMenu() {
+        document.getElementById("side-menu").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
 
+      function closeSlideMenu() {
+        document.getElementById("side-menu").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+    <script src="./assets/js/index.js"></script>
+  </body>
 </html>
