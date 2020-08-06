@@ -207,7 +207,8 @@ body {
 
 .showcase:before {
   content: "";
-  background: url("../images/web-design-redding-ca.jpg") no-repeat center center/cover;
+  background: url("../images/web-design-redding-ca.jpg") no-repeat center
+    center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -334,10 +335,7 @@ body {
 
 .portfolio-card img {
   width: 22rem;
-<<<<<<< HEAD
   border-radius: 5px;
-=======
->>>>>>> d76d38a70f96f58584cb6111f1454a99b5be178a
 }
 
 .portfolio-card ul {
