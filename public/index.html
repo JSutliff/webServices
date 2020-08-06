@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>GSWS</title>
 
+    <script
+      src="https://kit.fontawesome.com/cdb66e7ab9.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Golden State Web Services | Web Design, Hosting and Marketing</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -33,82 +36,80 @@
       }
     </script>
   </head>
-
   <body>
-    <!-- HAMBURGER ICON -->
-    <nav class="navbar">
-      <span class="open-slide">
-        <a href="#" onclick="openSlideMenu()">
-          <svg width="30" height="30">
-            <path d="M0,5 30,5" stroke="black" stroke-width="5" />
-            <path d="M0,14 30,14" stroke="black" stroke-width="5" />
-            <path d="M0,23 30,23" stroke="black" stroke-width="5" />
-          </svg>
-        </a>
-      </span>
-
-      <h2 id="logo">GSWS</h2>
-
-      <!-- NAV -->
-      <ul class="navbar-nav">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <nav class="hide">
+      <ul id="top-nav">
+        <h2 id="logo">GSWS</h2>
+        <li class="grow"><a href="#about">About</a></li>
+        <li class="grow"><a href="#services">Services</a></li>
+        <li class="grow"><a href="#portfolio">Portfolio</a></li>
+        <li class="grow"><a href="#blog">Blog</a></li>
+        <li class="grow"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <!-- SLIDE MENU -->
-    <div id="side-menu" class="side-nav">
-      <p class="btn-close" onclick="closeSlideMenu()">&times;</p>
-      <a href="#hero">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#">Blog</a>
-      <a href="#contact">Contact</a>
+    <!-- Hamburger Menu -->
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" id="toggler" />
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul id="toggleMenu">
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- END RESPONSIVE MENU -->
 
-    <!-- HERO -->
-    <section class="hero" id="hero">
-      <div class="hero-inner">
-        <h2 id="hero-text">
-          We create effective websites that are focused on results
-        </h2>
-        <a href="#contact" class="btn">Get a quote</a>
+    <!-- SHowcase -->
+    <header class="showcase">
+      <div class="container showcase-inner">
+        <h1>We design effective websites that are focused on results</h1>
+        <a href="#about" class="cta-btn">Request A Quote</a>
+      </div>
+    </header>
+
+    <!-- END SHOWCASE -->
+
+    <!-- About -->
+
+    <section id="about">
+      <h2>About Us</h2>
+      <div id="about-container">
+        <p>
+          At Golden State Web Services we pride ourselves on crafting custom
+          technical solutions for the unique needs of each client. We are
+          focused on results and driven by data. We have experience in digital
+          marketing, search engine optimization, social media management, web
+          design/development and hosting.
+        </p>
+        <p>
+          Being a small company enables us to provide personal attention to each
+          of our customers. We use a client questionaire to effectively learn
+          the needs of each project before designing a solution. This allows us
+          to provide optimized developement that produces consistent results.
+          Contact us today for a free quote.
+        </p>
       </div>
     </section>
 
-    <main>
-      <!-- ABOUT -->
-      <section id="about">
-        <div id="about-title">
-          <h2>About Us</h2>
-        </div>
-        <div class="about">
-          <p>
-            At Golden State Web Services we pride ourselves on crafting custom
-            technical solutions for the unique needs of each client. We are
-            focused on results and driven by data. We have experience in digital
-            marketing, search engine optimization, social media management, web
-            design/development and hosting.
-          </p>
-          <p>
-            Being a small company enables us to provide personal attention to
-            each of our customers. We use a client questionaire to effectively
-            learn the needs of each project before designing a solution. This
-            allows us to provide optimized developement that produces consistent
-            results. Contact us today for a free quote.
-          </p>
-        </div>
-      </section>
+    <!-- END ABOUT -->
 
-      <!-- TAGLINES -->
-      <div class="tagLines tagContainer margin-top">
-        <div id="tag-1" class="tag">
-          <h3 class="tagLines-title">Data Driven</h3>
+    <!-- Tag Lines -->
+
+    <section id="taglines" class="center-content">
+      <div id="taglines-container">
+        <div class="tagline-card border-right">
+          <h3 class="tagline" id="tagline-first">Data Driven</h3>
           <p>
             We use analytics tools to understand your users and and best
             evaluate the performance of your website, digital marketing, content
@@ -116,217 +117,220 @@
           </p>
         </div>
 
-        <div id="tag-2" class="tag">
-          <h3 class="tagLines-title">Design Focused</h3>
+        <div class="tagline-card border-right">
+          <h3 class="tagline">Design Focused</h3>
           <p>
             We apply proven design principles to achieve visually appealing
             products that produce results.
           </p>
         </div>
 
-        <div id="tag-3" class="tag">
-          <h3 class="tagLines-title">Detail Oriented</h3>
+        <div class="tagline-card">
+          <h3 class="tagline">Detail Oriented</h3>
           <p>
             With an acute attention to detail our team is able to provide unique
             insights that may otherwise be overlooked.
           </p>
         </div>
       </div>
+    </section>
+    <!-- END TAGLINES -->
 
-      <!-- TESTIMONIES -->
-      <section id="testimonies">
-        <div class="testimonies-quote">
+    <!-- Testimony -->
+    <section id="testimony">
+      <h4>
+        "Golden state web services redesigned the FairWindInspections.com
+        website providing a modern mobile responsive layout. They’ve helped us
+        optimize and create content to increase our site ranking and overall
+        performance. " - Kevin Hunt
+      </h4>
+    </section>
+    <!-- END TESTIMONY -->
+
+    <!-- Services -->
+    <section class="center-content" id="services">
+      <h2>Services</h2>
+
+      <div id="services-container">
+        <div class="service-card">
+          <h3>Web Design/Development</h3>
           <p>
-            "The team at Golden State Web Services helped to bring my business
-            into the modern age by providing web development, digital marketing
-            and hosting services. I would recomend them to anyone looking to
-            create a strong presence on the web" - Mark Wieland
+            First impressions of a business are often made online. We design and
+            develop visually appealing websites and applications that produce
+            results.
           </p>
         </div>
-      </section>
 
-      <!-- SERVICES -->
-      <section id="services">
-        <div id="services-title">
-          <h2>Services</h2>
+        <div class="service-card">
+          <h3>Digital Marketing</h3>
+          <p>
+            Having a strong presence on the web is important for any modern
+            business. We manage effective ad campaigns on platforms such as
+            Google, Facebook, Instagram and others.
+          </p>
         </div>
-        <div class="card-container">
-          <div class="card">
-            <h3 class="card-title">Web Design/Development</h3>
-            <p class="card-description">
-              First impressions of a business are often made online. We design
-              and develop visually appealing websites and applications that
-              produce results.
-            </p>
-          </div>
 
-          <div class="card">
-            <h3 class="card-title">Search Engine Optimization</h3>
-            <p class="card-description">
-              By optimizing your site to rank in the top results of search
-              engines such as Google and Bing we are able to help customers find
-              your business instead of the competition.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3 class="card-title">Digital Marketing</h3>
-            <p class="card-description">
-              Having a strong presence on the web is important for any modern
-              business. We manage effective ad campaigns on platforms such as
-              Google, Facebook, Instagram and others.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3 class="card-title">Social Media Management</h3>
-            <p class="card-description">
-              Customer engagement through social media is more valuable now than
-              ever. We can help create and maintain your brand image through
-              managing postings on social media platforms such as Instagram and
-              Facebook.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3 class="card-title">Content Creation</h3>
-            <p class="card-description">
-              Having quality content helps create a strong presence on the web.
-              Our team is able to craft blogs and articles for just about any
-              industry or market targeting the customers you want.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3 class="card-title">Web Hosting</h3>
-            <p class="card-description">
-              In order to provide efficient support to our customers we host all
-              of the websites we build on our servers. This allows us to keep
-              development costs down while providing unrivaled customer support.
-            </p>
-          </div>
+        <div class="service-card">
+          <h3>Content Creation</h3>
+          <p>
+            Having quality content helps create a strong presence on the web.
+            Our team is able to craft blogs and articles for just about any
+            industry or market targeting the customers you want.
+          </p>
         </div>
-      </section>
 
-      <!-- PORTFOLIO -->
-      <div id="portfolio">
-        <h2 id="portfolio-title">Our Work</h2>
-        <div id="portfolio-container">
-          <!-- CANAL 50 CARD -->
-          <div class="card portfolio-card">
-            <img
-              src="./assets/images/canal50.png"
-              alt=""
-              class="portfolio-card-img"
-              width="286"
-              height="180"
-            />
-            <div class="portfolio-card-body">
-              <h5 class="portfolio-card-title">Canal 50 Phoenix</h5>
-              <p class="portfolio-card-text">
-                A landing page for a TV channel that is designed to inform and
-                aquire new viewers.
-              </p>
-              <a
-                href="http://www.canal50phoenix.com/"
-                target="blank"
-                class="portfolio-card-button btn"
-                >Check It Out</a
-              >
-            </div>
-          </div>
+        <div class="service-card">
+          <h3>Search Engine Optimization</h3>
+          <p>
+            By optimizing your site to rank in the top results of search engines
+            such as Google and Bing we are able to help customers find your
+            business instead of the competition.
+          </p>
+        </div>
 
-          <!-- AMBLESIDE CARD -->
-          <div class="card portfolio-card">
-            <img
-              src="./assets/images/ambleSide.png"
-              alt=""
-              class="portfolio-card-img"
-              width="286"
-              height="180"
-            />
-            <div class="portfolio-card-body">
-              <h5 class="portfolio-card-title">Ambleside Dr.</h5>
-              <p class="portfolio-card-text">
-                A single property website designed to sell a home. Lists
-                features of the home as well as local school ratings.
-              </p>
-              <a
-                href="https://jsutliff.github.io/single-property/"
-                target="blank"
-                class="portfolio-card-button btn"
-                >Check It Out</a
-              >
-            </div>
-          </div>
+        <div class="service-card">
+          <h3>Social Media Management</h3>
+          <p>
+            Customer engagement through social media is more valuable now than
+            ever. We can help create and maintain your brand image through
+            managing postings on social media platforms such as Instagram and
+            Facebook.
+          </p>
+        </div>
 
-          <!-- CREATIVE VISIONS CARD -->
-          <div class="card portfolio-card">
-            <img
-              src="./assets/images/creativeVisions.png"
-              alt=""
-              class="portfolio-card-img"
-              width="286"
-              height="180"
-            />
-            <div class="portfolio-card-body">
-              <h5 class="portfolio-card-title">Creative Visions</h5>
-              <p class="portfolio-card-text">
-                A small business landing page designed to generate sales and
-                reach potential clients.
-              </p>
-              <a
-                href="https://jsutliff.github.io/creative-visions/"
-                target="blank"
-                class="portfolio-card-button btn"
-                >Check It Out</a
-              >
-            </div>
-          </div>
-
-          <!-- END CARD CONTAINER -->
+        <div class="service-card">
+          <h3>Web Hosting</h3>
+          <p>
+            In order to provide efficient support to our customers we host all
+            of the websites we build on our servers. This allows us to keep
+            development costs down while providing unrivaled customer support.
+          </p>
         </div>
       </div>
+    </section>
+    <!-- END SERVICES -->
 
-      <!-- CONTACT FORM -->
-      <div id="contact">
-        <form action="/contact" id="contactForm" method="POST">
-          <h2>Contact Us</h2>
-          <input type="text" placeholder="Name" name="userName" />
-          <input type="text" placeholder="Email" name="userEmail" />
-          <textarea
-            name="userEmailMessage"
-            id="userEmailMessage"
-            cols="30"
-            rows="10"
-            placeholder="Message"
-            spellcheck="true"
-          ></textarea>
-          <button type="submit" id="contactBtn" class="btn">
-            Contact Us
-          </button>
-        </form>
+    <!-- Portfolio -->
+    <section id="portfolio" class="center-content">
+      <h2>Our Work</h2>
+
+      <div id="portfolio-container">
+        <div class="portfolio-card">
+          <h4>Fair Wind Inspections</h4>
+          <img src="./assets/images/website-design-redding-ca.jpg" alt="" />
+          Services Provided:
+          <ul>
+            <li>Website redesign</li>
+
+            <li>Conversion rate optimization</li>
+          </ul>
+        </div>
+
+        <div class="portfolio-card">
+          <h4>Canal 50 Phoenix</h4>
+          <img src="./assets/images/website-hosting-redding-ca.jpg" alt="" />
+          Services Provided:
+          <ul>
+            <li>Website development</li>
+
+            <li>Website hosting</li>
+          </ul>
+        </div>
+
+        <div class="portfolio-card">
+          <h4>Creative Visions</h4>
+          <img src="./assets/images/search-engine-optimization-redding-ca.jpg" alt="" />
+          Services Provided:
+          <ul>
+            <li>Website redesign</li>
+
+            <li>Search engine optimization</li>
+          </ul>
+        </div>
+
+        <div class="portfolio-card">
+          <h4>Single Property Website</h4>
+          <img src="./assets/images/real-estate-advertising-redding-ca.jpg" alt="" />
+          Services Provided:
+          <ul>
+            <li>Website design</li>
+            <li>Website hosting</li>
+            <li>Conversion rate optimization</li>
+            <li>Search engine optimization</li>
+          </ul>
+        </div>
       </div>
-    </main>
+    </section>
+    <!-- END PORTFOLIO -->
+
+    <!-- Contact -->
+    <section id="contact" class="center-content">
+      <h2>Contact</h2>
+
+      <a href="https://g.page/golden-state-web-services?share">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>
+          Redding, Ca.
+        </p>
+      </a>
+
+      <a href="tel:530-638-2535">
+        <i class="fas fa-phone"></i>
+
+        <p>(530)638-2535</p>
+      </a>
+
+      <a href="mailto:goldenstatewebservices@gmail.com">
+        <i class="fas fa-envelope-open-text"></i>
+        <p>
+          GoldenStateWebServices@gmail.com
+        </p>
+      </a>
+    </section>
+    <!-- END CONTACT -->
+
+    <!-- Quote -->
+    <!-- <section id="quote" class="center-content form-style-8">
+      <h1>Request A Quote</h1>
+      <form action="/contact" id="contactForm" method="POST">
+        <input type="text" placeholder="Name" name="userName" />
+        <input type="text" placeholder="Email" name="userEmail" />
+        <textarea
+          name="userEmailMessage"
+          id="userEmailMessage"
+          cols="30"
+          rows="10"
+          placeholder="Message"
+          spellcheck="true"
+        ></textarea>
+        <button type="submit" id="contactBtn" class="btn">
+          Contact Us
+        </button>
+      </form>
+    </section> -->
+    <!-- END QUOTE -->
+
+    <!-- Footer -->
 
     <footer>
-      <p id="copywrite">
-        Copyright&copy; Golden State Web Services 2020. All Rights Reserved.
+      
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1552920.182650296!2d-124.03525522476457!3d40.51844710960556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54d2ed1caa4713c5%3A0x3c515aea2861f912!2sGolden%20State%20Web%20Services!5e0!3m2!1sen!2sus!4v1596721634291!5m2!1sen!2sus"
+        width="400"
+        height="300"
+        frameborder="0"
+        style="border: 0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+      <p>
+        Website built by
+        <a href="http://www.goldenstatewebservices.com"
+          >Golden State Web Services</a
+        >
+        <p>Copyright&copy; 2020. All Rights Reserved.</p>
       </p>
     </footer>
-
-    <!-- <script src="./assets/js/slideMenu.js"></script> -->
-    <script>
-      function openSlideMenu() {
-        document.getElementById("side-menu").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-      }
-
-      function closeSlideMenu() {
-        document.getElementById("side-menu").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-      }
-    </script>
-    <script src="./assets/js/index.js"></script>
   </body>
 </html>
