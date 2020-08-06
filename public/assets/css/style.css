@@ -335,6 +335,7 @@ body {
 
 .portfolio-card img {
   width: 22rem;
+  border-radius: 5px;
 }
 
 .portfolio-card ul {
