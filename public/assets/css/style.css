@@ -119,6 +119,7 @@ body {
 /* Rotate On Hover When Checked */
 .menu-wrap .toggler:checked:hover + .hamburger > div {
   transform: rotate(225deg);
+<<<<<<< HEAD
 }
 
 /* Show Menu */
@@ -136,6 +137,25 @@ body {
   transition: opacity 0.4s ease 0.4s;
 }
 
+=======
+}
+
+/* Show Menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+
+>>>>>>> d76d38a70f96f58584cb6111f1454a99b5be178a
 .menu-wrap .menu {
   position: fixed;
   top: 0;
@@ -207,8 +227,7 @@ body {
 
 .showcase:before {
   content: "";
-  background: url("../images/web-design-redding-ca.jpg") no-repeat center
-    center/cover;
+  background: url("../images/threeSitting.jpg") no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -335,7 +354,10 @@ body {
 
 .portfolio-card img {
   width: 22rem;
+<<<<<<< HEAD
   border-radius: 5px;
+=======
+>>>>>>> d76d38a70f96f58584cb6111f1454a99b5be178a
 }
 
 .portfolio-card ul {
