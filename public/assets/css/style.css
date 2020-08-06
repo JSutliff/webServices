@@ -336,6 +336,7 @@ body {
 .portfolio-card img {
   width: 22rem;
   border-radius: 5px;
+  box-shadow: 2px 8px 12px 1px rgba(86, 117, 116, 0.45);
 }
 
 .portfolio-card ul {
@@ -454,6 +455,7 @@ footer a:hover {
 
 footer iframe {
   border-radius: 5px;
+  box-shadow: 2px 8px 12px 1px rgba(86, 117, 116, 0.45);
 }
 
 @media only screen and (min-width: 700px) {
