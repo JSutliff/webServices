@@ -452,6 +452,10 @@ footer a:hover {
   cursor: pointer;
 }
 
+footer iframe {
+  border-radius: 5px;
+}
+
 @media only screen and (min-width: 700px) {
   .grow {
     transition: all 0.2s ease-in-out;
