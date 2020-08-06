@@ -119,7 +119,6 @@ body {
 /* Rotate On Hover When Checked */
 .menu-wrap .toggler:checked:hover + .hamburger > div {
   transform: rotate(225deg);
-<<<<<<< HEAD
 }
 
 /* Show Menu */
@@ -137,25 +136,6 @@ body {
   transition: opacity 0.4s ease 0.4s;
 }
 
-=======
-}
-
-/* Show Menu */
-.menu-wrap .toggler:checked ~ .menu {
-  visibility: visible;
-}
-
-.menu-wrap .toggler:checked ~ .menu > div {
-  transform: scale(1);
-  transition-duration: var(--menu-speed);
-}
-
-.menu-wrap .toggler:checked ~ .menu > div > div {
-  opacity: 1;
-  transition: opacity 0.4s ease 0.4s;
-}
-
->>>>>>> d76d38a70f96f58584cb6111f1454a99b5be178a
 .menu-wrap .menu {
   position: fixed;
   top: 0;
