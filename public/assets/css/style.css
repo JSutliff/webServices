@@ -312,6 +312,7 @@ body {
 
 .tagline-card img {
   width: 120px;
+  /* margin-bottom: 25px; */
 }
 
 /* END TAGLINES */
@@ -587,7 +588,7 @@ footer iframe {
 
   .tagline-card img {
     width: 140px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 
   .tagline-card p {
