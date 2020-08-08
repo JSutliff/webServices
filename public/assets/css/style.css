@@ -347,6 +347,10 @@ body {
   margin-bottom: 50px;
 }
 
+.service-card img {
+  width: 150px;
+}
+
 .service-card h3 {
   color: #1d428a;
 }
