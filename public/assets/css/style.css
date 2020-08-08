@@ -14,7 +14,7 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
-  background-color: #fafafa;
+  background-color: white;
   font-size: 1.3rem;
   color: #212121;
 }
@@ -289,7 +289,7 @@ body {
 }
 
 #taglines {
-  background-color: white;
+  background-color: #fafafa;
   font-size: 1.3rem;
 }
 
@@ -362,7 +362,7 @@ body {
 
 /* Portfolio */
 #portfolio {
-  background-color: white;
+  background-color: #fafafa;
   padding-top: 75px;
 }
 
