@@ -300,9 +300,18 @@ body {
   padding-bottom: 25px;
 }
 
+#design-icon {
+  position: relative;
+  left: 15px;
+}
+
 #taglines p {
   text-align: start;
   margin-bottom: 75px;
+}
+
+.tagline-card img {
+  width: 120px;
 }
 
 /* END TAGLINES */
@@ -570,6 +579,11 @@ footer iframe {
 
   .tagline-card {
     width: 33%;
+  }
+
+  .tagline-card img {
+    width: 140px;
+    margin-bottom: 50px;
   }
 
   .tagline-card p {
