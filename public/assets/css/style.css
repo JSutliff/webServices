@@ -16,10 +16,14 @@ body {
   line-height: 1.4;
   background-color: #fafafa;
   font-size: 1.3rem;
+  color: #212121;
 }
 
 .center-content {
   text-align: center;
+}
+
+.section-title {
 }
 
 /* Hamburger Menu */
@@ -279,6 +283,11 @@ body {
 }
 
 /* Taglines */
+.tagline {
+  text-transform: uppercase;
+  color: #1d428a;
+}
+
 #taglines {
   background-color: white;
   font-size: 1.3rem;
@@ -300,7 +309,8 @@ body {
 
 /* Testimony */
 #testimony {
-  background-color: #212121;
+  /* background-color: #212121; */
+  background-color: #1d428a;
   color: white;
   padding: 75px;
 }
@@ -326,6 +336,10 @@ body {
 
 .service-card {
   margin-bottom: 50px;
+}
+
+.service-card h3 {
+  color: #1d428a;
 }
 
 .service-card p {
