@@ -39,6 +39,10 @@ router.get("/local-seo", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/local-seo.html"));
 });
 
+router.get("/sitemap", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/sitemap.xml"));
+});
+
 router.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/index.html"));
 });
