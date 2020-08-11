@@ -28,7 +28,6 @@ app.post("/contact", function (req, res) {
     text: `FROM: ${user}
     
     ${message}`,
-
   };
   sgMail
     .send(msg)
