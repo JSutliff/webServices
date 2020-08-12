@@ -253,10 +253,18 @@ body {
 #contact-call {
   color: white;
   border: solid 1px white;
-  width: 30%;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  width: 25%;
+  padding: 0.75rem 1rem;
+  margin-top: 75px;
+  margin-left: 140px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  box-shadow: 2px 8px 12px 1px rgba(86, 117, 116, 0.45);
+  /* margin: 0 auto; */
+
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
 }
 
 #contact-footer a {
@@ -677,6 +685,10 @@ footer iframe {
     margin: 0 auto;
     margin-top: 25px;
     text-align: left;
+  }
+
+  #contact-call {
+    margin-left: 75px;
   }
 
   footer p {
