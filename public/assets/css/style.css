@@ -239,7 +239,7 @@ body {
 }
 
 #contact-showcase-inner h1 {
-  margin-top: 75px;
+  /* margin-top: 75px; */
   color: white;
 }
 
@@ -248,6 +248,15 @@ body {
   margin: 0 auto;
   margin-top: 25px;
   text-align: left;
+}
+
+#contact-call {
+  color: white;
+  border: solid 1px white;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #contact-footer a {
