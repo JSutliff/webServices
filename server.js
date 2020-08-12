@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use("/", htmlRoutes);
 
-app.post("/contact", function (req, res) {
+app.post("/email", function (req, res) {
   let user = req.body.userName;
   let userEmail = req.body.userEmail;
   let message = req.body.userEmailMessage;
