@@ -368,7 +368,7 @@ body {
   padding: 75px;
 }
 
-#testimony p {
+#testimony {
   width: 95%;
   margin: 0 auto;
   font-size: 1.5rem;
@@ -446,7 +446,7 @@ p {
 }
 
 #contact a {
-  color: var(--overlay-color);
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -529,7 +529,7 @@ footer iframe {
 
 .footer-link {
   font-size: 1rem;
-  color: var(--primary-color);
+  color: var(--overlay-color);
 }
 
 footer a {
