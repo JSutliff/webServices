@@ -446,7 +446,7 @@ p {
 }
 
 #contact a {
-  color: var(--primary-color);
+  color: var(--overlay-color);
   text-decoration: none;
 }
 
