@@ -224,7 +224,7 @@ body {
 
 .showcase:before {
   content: "";
-  background: url("../images/web-design-redding-ca-min.webp") no-repeat center
+  background: url("../images/web-design-redding-ca-min.jpg") no-repeat center
     center/cover;
   position: absolute;
   top: 0;
