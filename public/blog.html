@@ -13,11 +13,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="GSWS is a web design and hosting company in Redding, California. We build ADA compliant websites with a focus on results through search engine optimization.">
+    <meta name="description" content="A web design blog by Goldent State Web Services. We will be posting case studies, business web development tips, and other information.">
 
-    <meta property="og:title" content="Web Design, Hosting and Marketing">
-    <meta property="og:description" content="Offering web design, content marketing and conversion rate optimization. GSWS builds websites with a focus on ADA Compliance and results through local seo.">
-    <meta property="og:image" content="http://goldenstatewebservices.com/assets/images/whiteBoard.jpg">
+    <meta property="og:title" content="Domains with free SSL">
+    <meta property="og:description" content="A web design blog by Goldent State Web Services. We will be posting case studies, business web development tips, and other information.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80">
     <meta property="og:url" content="http://goldenstatewebservices.com">
     <meta property="og:site_name" content="Golden State Web Services">
     <script
@@ -25,7 +25,9 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Golden State Web Services | Web Design, Hosting and Marketing | Redding, CA</title>
+    <link rel="stylesheet" href="./assets/css/websites.css">
+    <link rel="stylesheet" href="./assets/css/services.css">
+    <title>Golden State Web Services | Web Design and Website Development Blog</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -55,12 +57,13 @@
   <body>
     <nav class="hide">
       <ul id="top-nav">
-        <a href="/"><h2 id="logo">GSWS</h2></a>
+        <h2 id="logo">GSWS</h2>
         <li class="grow"><a href="/domain-with-ssl">Domains with SSL</a></li>
         <li class="grow"><a href="/web-design">Web Design</a></li>
         <li class="grow"><a href="/local-seo">Local SEO</a></li>
         <li class="grow"><a href="/business-website-solutions">Web Development + Hosting</a></li>
         <li class="grow"><a href="/blog">Blog</a></li>
+        <li class="grow"><a href="/contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -80,6 +83,7 @@
               <li><a href="/local-seo">Local SEO</a></li>
               <li><a href="/business-website-solutions">Web Development + Hosting</a></li>
               <li><a href="/blog">Blog</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -87,73 +91,56 @@
     </div>
     <!-- END RESPONSIVE MENU -->
 
-    <!-- SHowcase -->
-    <header class="showcase" id="contact-showcase">
-      <div id="contact-showcase-inner">
-        <a href="tel:530-638-2535"><button id="contact-call">   <i class="fas fa-phone"></i><br>Call Us</button></a>
-      
-        <form action="/email" id="contactForm" method="POST">
-   
-           
-            <h1>Let's Work Together</h1>
-            <input type="text" placeholder="Name" name="userName" />
-            <input type="text" placeholder="Email" name="userEmail" />
-            <textarea
-              name="userEmailMessage"
-              id="userEmailMessage"
-              cols="30"
-              rows="10"
-              placeholder="Message"
-              spellcheck="true"
-            ></textarea>
-            <button type="submit" id="contactBtn" class="btn">
-              Email Us
-            </button>
-          </form>
-      
-      </div>
-    </header>
 
     <!-- END SHOWCASE -->
 
     <!-- About -->
+    <section id="blog" class="center-content">
+      <h1>Web Design Blog</h1>
 
-    <section id="contact-page" class="center-content">
-      <p>Call us today to discuss an effective website design for your business. We offer:
-   
-        <ul>
-          <li>Domains with SSL</li>
-          <li>Website design</li>
-          <li>Local SEO</li>
-          <li>Web development</li>
-          <li>Hosting</li>
-          <li>Web accessibility</li>
-        </ul>
 
-      </p>
-      
+
+    
+
+     
     </section>
 
-  
-    <footer id="contact-footer">
-      <h2 class="section-title">Contact Us</h2>
+    <div id="blog-display">
+      <!-- <a href=""><div class="blog-card">
+        <h2 class="blog-card-title center-content">How web design helps business
+        </h2>
+        <img class="blog-card-img" src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1653&q=80" alt="">
+        <p>Web design can help or hurt a business depending on the quality of design. Apart from appearance...</p>
+       <button>Learn More</button>
+      </div></a> -->
 
-      
+      <a href="/blog/web-design-announcement"><div class="blog-card">
+        <h2 class="blog-card-title center-content">A new web design company in Redding
+        </h2>
+        <img class="blog-card-img" src="https://images.unsplash.com/photo-1551620832-49c1c08feddb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80" alt="">
+        <p>Announcing the launch of Golden State Web Services, a web design and development company...</p>
+       <button>Read More</button>
+      </div></a>
 
-      <a href="https://g.page/golden-state-web-services?share">
+ 
+      </div>
+    <!-- Footer -->
+    <footer>
+      <h2>Contact Us</h2>
+      <a href="https://g.page/golden-state-web-services?share" class="footer-link">
         <i class="fas fa-map-marker-alt"></i>
         <p>
           Redding, CA
         </p>
       </a>
 
-      <a href="tel:530-638-2535">
+      <a href="tel:530-638-2535" class="footer-link">
         <i class="fas fa-phone"></i>
 
         <p>(530)638-2535</p>
       </a>
 
-      <a href="mailto:goldenstatewebservices@gmail.com">
+      <a href="mailto:goldenstatewebservices@gmail.com" class="footer-link">
         <i class="fas fa-envelope-open-text"></i>
         <p>
           GoldenStateWebServices@gmail.com

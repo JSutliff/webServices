@@ -39,6 +39,16 @@ router.get("/local-seo", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/local-seo.html"));
 });
 
+router.get("/blog", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/blog.html"));
+});
+
+router.get("/blog/web-design-announcement", (req, res) => {
+  res.sendFile(
+    path.join(__dirname, "../public/blog-web-design-announcement.html")
+  );
+});
+
 router.get("/sitemap", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/sitemap.xml"));
 });
