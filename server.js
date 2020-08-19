@@ -1,17 +1,22 @@
 const express = require("express");
 const sgMail = require("@sendgrid/mail");
 const htmlRoutes = require("./routes/htmlRoutes");
+var compression = require("compression");
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 // Initialize the app and create a port
 const app = express();
+
 const PORT = process.env.PORT || 3000;
 
 // Set up body parsing, static, and route middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
+
+// compress all responses
+app.use(compression());
 app.use("/", htmlRoutes);
 
 app.post("/email", function (req, res) {
