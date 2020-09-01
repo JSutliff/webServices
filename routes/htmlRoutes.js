@@ -28,6 +28,10 @@ router.get("/blog/web-design-announcement", (req, res) => {
   );
 });
 
+router.get("/blog/design-helps-business", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/blog-design-helps.html"));
+});
+
 router.get("/sitemap", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/sitemap.xml"));
 });
@@ -37,7 +41,7 @@ router.get("/contact", (req, res) => {
 });
 
 router.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/index.html"));
+  res.redirect("/");
 });
 
 module.exports = router;

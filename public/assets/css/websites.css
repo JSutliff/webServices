@@ -8,12 +8,12 @@
 }
 
 .showcase {
-  background: linear-gradient(
+  /* background: linear-gradient(
     353deg,
     rgba(33, 33, 33, 1) 0%,
     rgba(29, 35, 40, 1) 12%,
     rgba(29, 66, 138, 1) 100%
-  );
+  ); */
   color: #fff;
   height: 90vh;
   position: relative;
@@ -22,7 +22,7 @@
 
 .showcase h1 {
   font-size: 1.5rem;
-  color: goldenrod;
+  color: #1d428a;
 }
 
 .cta-btn {
@@ -136,7 +136,7 @@ li p {
   padding: 0.75rem 1rem;
   border: none;
   background-color: var(--primary-color);
-  color: white;
+  color: black;
   width: 100%;
   margin: 0 auto;
   font-size: 1.2rem;
