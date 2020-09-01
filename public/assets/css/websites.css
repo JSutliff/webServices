@@ -167,6 +167,7 @@ li p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 75px;
+    margin-top: 75px;
   }
 
   .features-card {
